@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
         - name: simple-container
-        image: rjteche/healthcare-rj
+        image: rjteche/healthcare-rohan
         ports:
-        - containerPort: 8086
+        - containerPort: 8082
 
 ---
 
@@ -31,5 +31,5 @@ spec:
   type: NodePort
   ports:
     - port: 80
-      targetPort: 8086
+      targetPort: 8082
       nodePort: 30007
