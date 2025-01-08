@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -11,13 +10,13 @@ spec:
   template:
     metadata:
       labels:
-          app: healthcare
+        app: healthcare
     spec:
       containers:
         - name: simple-container
-        image: rjteche/healthcare-rohan
-        ports:
-        - containerPort: 8082
+          image: rjteche/healthcare-rohan
+          ports:
+            - containerPort: 8082
 
 ---
 
